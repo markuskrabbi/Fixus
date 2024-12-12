@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 120px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #005baa;
+}
+
+.language {
+    font-size: 14px;
+    color: #333;
+}
+
+.hero {
+    position: relative;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: none;
+}
+
+.hero img.active {
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #005baa;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #005baa;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.hero-button:hover {
+    background-color: #003f7d;
+}
+
+.services {
+    text-align: center;
+    padding: 50px 30px;
+    background-color: #f9f9f9;
+}
+
+.services h2 {
+    font-size: 55px;
+    font-weight: 1000;
+    font-style: condensed;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 0.88em;
+    text-align: center;
+    position: relative;
+    padding-top: 0px;
+}
+
+.services p {
+    font-size: 18px;
+    font-family: inherit;
+    line-height: inherit;
+    font-weight: 550;
+    font-style: inherit;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    border: 0;
+    outline: 0;
+    word-wrap: break-word;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 62px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    text-align: center;
+}
+
+.service-item img {
+    width: 100px;
+    height: 100px;
+}
+
+.service-button {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 30px;
+    background-color: #1791fc;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    width: 175px;
+    max-width: 400px auto;
+}
+
+.service-button:hover {
+    background-color: #003f7d;
+}
+
+.partner-logos {
+    padding: 50px 0;
+    background-color: #f0eded;
+    text-align: center;
+    position: relative;
+}
+
+.logo-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: transform 0.3s;
+}
+
+.logo-slider img {
+    width: 100px;
+    height: auto;
+    opacity: 0.5;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.logo-slider img.active {
+    opacity: 1;
+    transform: scale(1.6);
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.slider-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #005baa;
+}
+
+.triangle-icon {
+    width: 30px;
+    display: block;
+    margin: 0 auto 10px auto;
+    padding-top: 0px;
+}
+
+.custom-section {
+    text-align: center;
+    padding: 50px 30px;
+    background-color: #005baa;
+    color: white;
+}
+
+.custom-content h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+}
+
+.custom-content p {
+    font-size: 18px;
+    color: #ddd;
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+.custom-content .service-button {
+    background-color: #003f7d;
+    color: white;
+    padding: 20px 20px;
+    font-size: 14px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.custom-content .service-button:hover {
+    background-color: #002a56;
+}
+
+.custom-image {
+    max-width: 60%;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.button-section .service-button {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 30px;
+    background-color: #1791fc;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    width: auto;
+    max-width: 175px;
+}
